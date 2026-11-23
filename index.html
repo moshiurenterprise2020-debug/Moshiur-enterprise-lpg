@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#14532d"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>মশিউর এন্টারপ্রাইজ LPG</title></head>
+<body><header><h1>মশিউর এন্টারপ্রাইজ LPG</h1><p>সহজ ব্যবসার হিসাব</p></header>
+<main><section class="card"><h2>দ্রুত হিসাব</h2><label>ধরন<select id="type"><option value="sale">বিক্রয়</option><option value="purchase">ক্রয়</option><option value="collection">বাকি আদায়</option><option value="expense">খরচ</option></select></label>
+<label>ব্র্যান্ড<input id="brand" placeholder="যেমন: বসুন্ধরা / যমুনা"></label><label>সিলিন্ডারের সাইজ<input id="size" value="12 kg"></label>
+<label>পরিমাণ<input id="qty" type="number" min="1" value="1"></label><label>প্রতি পিস টাকা<input id="price" type="number" min="0" value="0"></label>
+<label>নোট<input id="note" placeholder="কাস্টমারের নাম / বিবরণ"></label><button id="save">হিসাব যোগ করুন</button></section>
+<section class="card"><h2>আজকের সারাংশ</h2><div id="summary">লোড হচ্ছে...</div></section>
+<section class="card"><h2>হিসাবের তালিকা</h2><button class="secondary" id="export">ব্যাকআপ ডাউনলোড</button><div id="list"></div></section>
+<p class="small">এই সংস্করণে হিসাব এই ডিভাইসের ব্রাউজারে সংরক্ষিত হয়। অনলাইন বহু-ডিভাইস সিঙ্ক এখনো চালু নয়।</p></main>
+<script type="module" src="app.js"></script></body></html>
